@@ -1,0 +1,21 @@
+rootProject.name = "SpringApplication"
+
+include(":KittySpringRestApiNSecurity")
+project(":KittySpringRestApiNSecurity").projectDir = file("./KittySpringRestApiNSecurity")
+include(":KittySpringRestApiNSecurity:DAO")
+project(":KittySpringRestApiNSecurity:DAO").projectDir = file("./KittySpringRestApiNSecurity/DAO")
+include(":KittySpringRestApiNSecurity:Services")
+project(":KittySpringRestApiNSecurity:Services").projectDir = file("./KittySpringRestApiNSecurity/Services")
+include(":KittySpringRestApiNSecurity:Controller")
+project(":KittySpringRestApiNSecurity:Controller").projectDir = file("./KittySpringRestApiNSecurity/Controller")
+
+include(":KittyMicroservicesWithKafka")
+project(":KittyMicroservicesWithKafka").projectDir = file("./KittyMicroservicesWithKafka")
+include(":KittyMicroservicesWithKafka:DAO")
+project(":KittyMicroservicesWithKafka:DAO").projectDir = file("./KittyMicroservicesWithKafka/DAO")
+include(":KittyMicroservicesWithKafka:KittMicroservice")
+project(":KittyMicroservicesWithKafka:KittMicroservice").projectDir = file("./KittyMicroservicesWithKafka/KittMicroservice")
+include(":KittyMicroservicesWithKafka:OwnerMicroservice")
+project(":KittyMicroservicesWithKafka:OwnerMicroservice").projectDir = file("./KittyMicroservicesWithKafka/OwnerMicroservice")
+include(":KittyMicroservicesWithKafka:ControllerMicroservice")
+project(":KittyMicroservicesWithKafka:ControllerMicroservice").projectDir = file("./KittyMicroservicesWithKafka/ControllerMicroservice")
